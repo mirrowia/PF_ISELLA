@@ -1,0 +1,27 @@
+.container-videos{
+    justify-content: space-evenly !important;
+    .container-video{
+        margin: 1rem 0;
+        .info{
+                min-height: 120px;
+        }
+    }
+}
+
+.container-galery{
+    img{
+        max-width: 100%;
+        height: auto;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 820px)  and (max-width: 1200px){
+    
+    .container-galery{
+        div{
+            width: 50%;
+        }
+    }
+    
+    }

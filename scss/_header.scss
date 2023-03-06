@@ -1,0 +1,86 @@
+@import "./variables";
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    min-height: 5vh;
+    z-index: 1020;
+    -webkit-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.5);
+    display: flex;
+    nav {
+        width: 100%;
+        div {
+            ul {
+                li {
+                    position: relative;
+                    display: block;
+                    text-decoration: none;
+                    margin: 0 0.5rem;
+                    a {
+                        text-decoration: none;
+                        pointer-events: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.headerLight{
+    color: $lg-color-secondary;
+    background-color: $lg-bg-color-secondary;
+    nav {
+        div {
+            ul {
+                li {
+                    a {
+                        color: $lg-color-secondary;
+                        &:hover{
+                            color: $lg-color-secondary-hover;
+                        }
+                    }
+
+                    .activePage{
+                        color: $lg-color-secondary-hover;
+                    }
+                }
+            }
+            a{
+                svg{
+                    fill: $lg-color-secondary;
+                }
+            }
+        }
+    }
+}
+
+.headerDark{
+    color: $dk-color-secondary;
+    background-color: $dk-bg-color-secondary;
+    nav {
+        div {
+            ul {
+                li {
+                    a {
+                        color: $dk-color-secondary;
+                        &:hover{
+                            color: $dk-color-secondary-hover;
+                        }
+                    }
+
+                    .activePage{
+                        color: $dk-color-secondary-hover;
+                    }
+                }
+            }
+            a{
+                svg{
+                    fill: $dk-color-secondary;
+                }
+            }
+        }
+    }
+}

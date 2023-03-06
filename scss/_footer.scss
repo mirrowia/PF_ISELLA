@@ -1,0 +1,40 @@
+@import "./variables";
+
+footer{
+    bottom: 0;
+    margin: 0 auto;
+    min-height: 3vh;
+    width: 100%;    
+    display: flex;
+    justify-content: flex-end;
+    div{
+        display: flex;
+        align-items: center;
+        p{
+            align-items: center;
+            font-size: 1.25rem !important;
+            margin: 0;
+        }
+        ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            li{
+                position: relative;
+                display: block;
+                text-decoration: none;
+                margin: 0 0.5rem;
+            }
+        }
+    }
+}
+
+.footerDark{
+    color: $dk-color-secondary;
+    background-color: $dk-bg-color-secondary;
+}
+
+.footerLight{
+    color: $lg-color-secondary;
+    background-color: $lg-bg-color-secondary;
+}
